@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import React from "react";
 import "./index.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the Font Awesome React component
 import { faCodeCompare, faUserClock } from "@fortawesome/free-solid-svg-icons";

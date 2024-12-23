@@ -8,8 +8,7 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
-# dist
-git add -f dist
+ dist
 dist-ssr
 *.local
 
