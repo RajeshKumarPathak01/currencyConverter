@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       screens:{
-        sm: { raw: "(max-width: 768px)" }
+        sm: { raw: "(max-width: 768px)" },
+        md: { raw: "(min-width: 446px) and (max-width: 1082px)" },
       }
     },
   },

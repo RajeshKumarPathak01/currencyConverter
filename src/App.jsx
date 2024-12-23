@@ -39,7 +39,7 @@ function App() {
        }
      }
    } catch (error) {
-    console.log(`Error fetching data: , ${error.message}`);
+    console.log(`Error fetching data..: , ${error.message}`);
    }
   })
   fetchData();
@@ -104,18 +104,22 @@ const handleSwap=(()=>{
 
   return (
     <>
-
       <div
         className="w-screen h-screen bg-cover text-black text-pretty "
         style={{ backgroundImage: `url(${pex2})` }}
       >
         <div
           className=" justify-center text-center   max-h-fit w-fit bg-white/30 border-white border-2 text-black 
-        backdrop-blur-xl  rounded-xl mx-[30%] relative top-[15%] sm:max-h-fit sm:w-[60%] sm:text-[12px] sm:font-bold"
+        backdrop-blur-xl 
+         rounded-xl mx-[30%] relative top-[15%] sm:max-h-fit sm:w-[93%] sm:ml-3 sm:text-[12px] sm:font-bold
+         md:max-h-fit md:w-[93%] md:ml-6 md:text-[12px] md:font-bold
+         "
         >
-          <h1 className="text-white">Currency Converter</h1>
+          <h1 className="text-white sm:text-[30px] sm:mx-1">
+            Currency Converter
+          </h1>
           <hr className="mx-6 font-bold py-1 mt-4" />
-          <div className="bg-white  w-fit h-[120px] px-3 py-3 mx-8 mt-5 -mb-3 rounded-lg  text-black sm:mx-3">
+          <div className="bg-white  w-fit h-[120px] px-3 py-3 mx-8 mt-5 -mb-3 rounded-lg  text-black md:mx-8 md:w-[90%] sm:mx-3">
             <div className=" text-black text-bold">
               <span className=" -left-8  -ml-[58%] sm:-ml-4 sm:font-medium sm:text-sm text-bold text-xl">
                 From
@@ -157,8 +161,8 @@ const handleSwap=(()=>{
           </div>
 
           <button
-            className=" bg-blue-700 text-white text-center  py-3 hover:bg-blue-800  w-[25%] mb-[2]  "
-            onClick={handleSwap}
+            className=" bg-blue-700 text-white text-center  py-3 hover:bg-blue-800  w-[25%] mb-[2] sm:text-lg md:text-2xl "
+            onClick={handleSwap} 
           >
             Swap
             <FontAwesomeIcon
@@ -173,7 +177,7 @@ const handleSwap=(()=>{
             />
           </button>
 
-          <div className="bg-white w-fit h-[120px] px-3 py-3 mx-8 -mt-3 rounded-lg  text-black sm:mx-3">
+          <div className="bg-white w-fit h-[120px] px-3 py-3 mx-8 -mt-3 rounded-lg  text-black md:mx-8 md:w-[90%] sm:mx-3">
             <div className=" text-black text-bold">
               <span className=" -left-8  -ml-[64%] sm:-ml-4 sm:font-medium sm:text-sm text-bold text-xl">
                 To
@@ -214,7 +218,7 @@ const handleSwap=(()=>{
 
           <button
             onClick={handleClickCurrency}
-            className=" bg-blue-700 text-white text-center px-2 py-3 hover:bg-blue-800 my-5 w-[85%] hover:text-md"
+            className=" bg-blue-700 text-white text-center px-2 py-3 hover:bg-blue-800 my-5 w-[85%] hover:text-md md:text-2xl sm:text-xl sm:mx-2"
           >
             Convert {from} to {To}
           </button>
