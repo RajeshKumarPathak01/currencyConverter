@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./index.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the Font Awesome React component
 import { faCodeCompare, faUserClock } from "@fortawesome/free-solid-svg-icons";
 import CurrencyApi from "./components/CurrencyApi";
+import pex2 from './assets/pex2.jpg'
+
 
 function App() {
   const [from, setFrom] = useState("USD");
@@ -103,7 +103,11 @@ const handleSwap=(()=>{
 
   return (
     <>
-      <div className="w-screen h-screen bg-[url(./asset/pex2.jpg)] bg-cover text-black text-pretty ">
+
+      <div
+        className="w-screen h-screen bg-cover text-black text-pretty "
+        style={{ backgroundImage: `url(${pex2})` }}
+      >
         <div
           className=" justify-center text-center   max-h-fit w-fit bg-white/30 border-white border-2 text-black 
         backdrop-blur-xl  rounded-xl mx-[30%] relative top-[15%] sm:max-h-fit sm:w-[60%] sm:text-[12px] sm:font-bold"
